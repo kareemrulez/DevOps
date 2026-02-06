@@ -1,1 +1,4 @@
 Docker Commands
+sudo apt update
+sudo apt install docker.io
+systemctl status docker
