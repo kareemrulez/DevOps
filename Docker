@@ -4,3 +4,12 @@ sudo apt install docker.io
 systemctl status docker
 sudo docker pull ubuntu
 sudo docker images
+sudo docker run -itd -p 80:80 --name=assign1 ubuntu
+i = interactive, t = terminal, d= detachmode, -p= port first 80 local machine port, 2nd 80 Container, --name=name of the container ubuntu
+
+You can see the container now
+sudo docker ps
+
+Enter into the container
+sudo docker exec -it assign1 bash (assign1 is the name of the container, you can also provide container id)
+
